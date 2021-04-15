@@ -1,1 +1,213 @@
-/* Add CSS styling here */
+html {
+    background: #6ddccf;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    margin: 0px auto;
+    background: #ffefa1;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 2px black;
+}
+
+h1 {
+    display: inline;
+    font-family: "Dela Gothic One", sans-serif;
+    color: #94ebcd;
+    text-shadow: 1px 1px black;
+    margin-bottom: 80px;
+    font-size: xx-large;
+}
+
+#last {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex: column, nowrap;
+    justify-content: flex-start;
+    margin-left: 4rem;
+    margin-top: 20px;
+}
+
+a {
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    background: #94ebcd;
+    border: 4px solid white;
+    box-shadow: 2px 2px 2px 1px black;
+    transform: rotate(0deg);
+    z-index: 0;
+    transition: box-shadow .5s, transform .5s, z-index .5s;
+}
+
+a:hover {
+    box-shadow: 6px 6px 4px 2px black;
+    transform: rotate(5deg);
+    z-index: 4;
+    transition: box-shadow .5s, transform .5s, z-index .5s;
+}
+
+#top-content {
+    margin-top: 200px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+    color: #ffcb91;
+}
+
+#top-content-text a {
+    margin-bottom: 50px;
+}
+
+#top-content-text p {
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+b {
+    color: #ffefa1;
+}
+
+b:hover {
+    text-decoration: underline;
+}
+
+#top-content-img {
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 40vw;
+    border: 2px solid #ffefa1;
+    box-shadow: 4px 4px 2px 2px black;
+    filter: saturate(40%) hue-rotate(-20deg);
+    z-index: 0;
+}
+
+#top-content-text {
+    display: inline-block;
+    position:relative;
+    width: 40vw;
+    /* width: 55%; */
+    left: 200px;
+    bottom: 100px;
+    margin-bottom: -50px;
+    font-size: x-large;
+}
+
+#top-content-text p {
+    width: 50%;
+}
+
+#main-img-container {
+    width: 100%;
+    background: #2adEcF;
+    border: 2px solid #ffefa1;
+    border-radius: 10px;
+}
+
+#main-img-content {
+    margin: 0px auto;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container {
+    display: block;
+    width: 20vw;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 2px solid #ffefa1;
+    box-shadow: 4px 4px 2px 1px black;
+    filter: blur(3px) opacity(90%) saturate(50%);
+    transition: box-shadow .5s, blur .5s;
+}
+
+.container:hover {
+    box-shadow: 8px 8px 4px 5px black;
+    filter: blur(0px);
+    transition: box-shadow .5s, blur .5s;
+}
+
+.container:hover .overlay {
+    opacity: 95%;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffefa1;
+    text-align: center;
+}
+
+.overlay h3 {
+    color: black;
+    text-shadow: -2px -2px white;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.overlay p {
+    color: black;
+    text-shadow: -2px -2px white;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background: #ffefa1;
+    margin-top: 20px;
+    box-shadow: 0px -2px black;
+}
+
+#footer-content {
+    position: relative;
+    left: 50vw;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+#footer-content p {
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
